@@ -79,3 +79,5 @@ Given your existing setup (stateful JWTs with `jti`) and concern about stateless
 You do have to choose which problem to live with, as no solution eliminates all issues. For your small or medium app, the **simplified hybrid model** (stateful JWTs with `jti` checks on every request for sensitive services, first-request checks for others, and short-lived tokens with refresh tokens) is the closest to “perfect.” It improves on your current approach by reducing the revocation delay for critical services and prepares for stateless JWTs as you scale, all while leveraging your existing `jti`-based system. It’s more secure than stateless JWTs and less resource-intensive than checking `jti` on every request across all services.
 
 If you share specifics (e.g., number of microservices, traffic, security needs, or infrastructure), I can help refine this further or provide implementation details (e.g., Redis setup, refresh token logic, or microservice coordination). Would you like assistance with any of these aspects?
+
+By Grok
